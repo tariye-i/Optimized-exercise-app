@@ -9,7 +9,7 @@ list3 = [1,2,4,5,7]
 
 def function(anylist):
     print(anylist)
-
+function()
 # 3
 
 def Function(anylist):
@@ -20,7 +20,7 @@ def Function(anylist):
         newlist.append(new)
         count = count + 1
     print(newlist)
-
+Function()
 # 4
 
 def function1(anylist):
@@ -31,7 +31,7 @@ def function1(anylist):
             smallest_num = anylist[count]            
         count = count + 1
     print(smallest_num)
-
+function1()
 # 5
 
 def function2():
