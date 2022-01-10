@@ -1,4 +1,6 @@
-
+import healthsignup
+import height
+import weight
 def calculate_bmi():
     kg = int(weight_tf.get())
     cm = int(height_tf.get())/100
