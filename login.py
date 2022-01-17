@@ -5,7 +5,7 @@ def logins(username,password):
     username = username+"\n"
     password = password+"\n"
     done = False
-    while( not done):
+    while(done==False):
         line = checking.readline()
         if line == username:
             database_password = checking.readline()
@@ -15,7 +15,7 @@ def logins(username,password):
                 done = True
                 return True
             else:
-                print("sorry your login credentials do not match out database")
+                print("sorry your login details are not and  do not match what we have saved")
                 done = True
                 return False
         if (line == ""):
