@@ -1,6 +1,7 @@
 import usersignup
 import login
 import minisignup
+import bmi
 print('hello user welcome to optimized excercise app')
 print('Do you have an account with us? pls login, or sign up to create an account')
 respon= input()
