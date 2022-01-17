@@ -1,4 +1,6 @@
+import usersignup
 import login
+import minisignup
 print('hello user welcome to optimized excercise app')
 print('Do you have an account with us? pls login, or sign up to create an account')
 respon= input()
@@ -11,7 +13,8 @@ if(respon =='yes'):
     if(verification==True):
         print('you may now proceed to dashboard')
     else:
-        print('are you sure your details are correct, pls create an account and do not stress us')
+        
+        print('are you sure your details are correct,type yes to create one')
 else:
     done = False
     count=0
@@ -20,10 +23,9 @@ else:
     print('would you like to create an account with us')
     respon=input()
     if(respon=='yes'):
-        healthclass.create_health_data()
+        usersignup.classer()
         print('congratulations i see that you have made an account with us ')
+        minisignup.create_user()
     else:
-        print('lose weight you dont want to lose you want to still be fat,better get your life')
+        print('okay then')
         done=True
-    count=count+1
-    
