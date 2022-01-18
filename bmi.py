@@ -6,7 +6,7 @@ root.title("bmi calculator")
 
 def calculate_bmi():
     kg = float(entry_kg.get())
-    height = float(entry_height.get())
+    height = float(entry_height.get())/100
     bmi = round( kg/ (height **  2))
     label_result['text'] = f"BMI: {bmi}"  
 
