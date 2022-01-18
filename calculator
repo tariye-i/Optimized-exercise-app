@@ -1,0 +1,44 @@
+
+import tkinter
+
+root = tkinter.Tk()
+root.title("calculator")
+ 
+#weight - goal weight = X
+#x*7700 = total amount of calories to be lost
+
+
+def calculate_exercise():
+    goal = float(entry_goal.get())
+    current = float(entry_current.get())
+    exercise = round( current - goal )
+    label_result['text'] = f"required exercise needed : {exercise}"  
+
+
+
+label_goal_ = tkinter.Label(root, text = "goal weight : ")
+label_goal_.grid(column=0, row = 0)
+
+entry_goal = tkinter.Entry(root)
+entry_goal.grid(column=1, row = 0)
+
+label_current = tkinter.Label(root, text = "current: ")
+label_current.grid(column=0, row = 1)
+ 
+entry_current = tkinter.Entry(root)
+entry_current.grid(column=1, row = 1)
+
+button_calculate = tkinter.Button(root, text="Calculate", command=calculate_exercise)
+button_calculate.grid(column=0, row = 2)
+   
+label_result = tkinter.Label(root, text = "exercise: ")
+label_result.grid(column=1, row = 2 )
+
+
+
+
+
+root.mainloop()
+
+
+
