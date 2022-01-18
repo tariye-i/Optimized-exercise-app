@@ -5,8 +5,4 @@ class userhealth:
         self.weight = weight
         self.gweight = gweight
         self.workout = workout
-    def __str__(self) -> str:
-        print ("my weight is", self.weight)
-        print ("my height is", self.height)
-        
 
